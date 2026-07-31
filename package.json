@@ -1,0 +1,35 @@
+{
+  "name": "react-native-sandbox",
+  "version": "1.0.0",
+  "description": "Welcome! Our goal is to equip you with the skills you'll need to become a profesional React Native developer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suabochica/react-native-sandbox",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "git+https://github.com/suabochica/react-native-sandbox/issues"
+    },
+    "homepage": "git+https://github.com/suabochica/react-native-sandbox#readme",
+    "devDependencies": {
+      "standard": "17.0.0"
+    },
+    "eslintConfig": {
+      "extends": "./node_modules/standard/eslintrc.json"
+    },
+    "pnpm": {
+      "overrides": {
+        "eslint": "8.56.0"
+      }
+    }
+  },
+  "packageManager": "pnpm@11.18.0+sha512.M9g8d9qC9J+6g2klxvG4QRgewxMrZwY5vQEvcHX1x89jTF+HAUfBmq50ePrAHfCdiJLogEVIlu3SPumzN1dWPA=="
+}
