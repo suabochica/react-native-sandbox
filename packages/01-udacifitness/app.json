@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "name": "Udacifitness",
+    "description": "The best triathlon training app in the world.",
+    "slug": "udacifitness",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#ffffff",
+    "plugins": [
+      "expo-notifications",
+      "expo-location"
+    ],
+    "ios": {
+      "bundleIdentifier": "org.udacifitness.exp"
+    },
+    "android": {
+      "package": "org.udacifitness.exp"
+    }
+  }
+}

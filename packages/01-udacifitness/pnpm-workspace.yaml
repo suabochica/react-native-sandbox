@@ -1,0 +1,28 @@
+# Standalone pnpm workspace for the UdaciFitness Expo app.
+# It is excluded from the monorepo workspace (see the root
+# pnpm-workspace.yaml) so its react 19 / react-native 0.81 tree stays
+# isolated from the react 18 web projects.
+#
+# Metro and jest-expo resolve packages more reliably with a classic
+# hoisted node_modules layout.
+nodeLinker: hoisted
+# These packages require('react')/require('react-native') without declaring
+# them as peer dependencies; pinning the peers guarantees a single shared
+# react/react-native instance for the whole bundle.
+packageExtensions:
+  '@react-native-community/slider':
+    peerDependencies:
+      react: '*'
+      react-native: '*'
+  react-native-calendars:
+    peerDependencies:
+      react: '*'
+      react-native: '*'
+  recyclerlistview:
+    peerDependencies:
+      react: '*'
+      react-native: '*'
+  react-native-swipe-gestures:
+    peerDependencies:
+      react: '*'
+      react-native: '*'
