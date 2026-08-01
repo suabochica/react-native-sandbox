@@ -1,0 +1,18 @@
+# Standalone pnpm workspace for the UdaciCards Expo app.
+# Like 01-udacifitness, it is isolated from the monorepo workspace so its
+# react 19 / react-native 0.81 tree never mixes with the react 18 copies
+# hoisted at the repo root.
+#
+# Metro and jest-expo resolve packages more reliably with a classic
+# hoisted node_modules layout.
+nodeLinker: hoisted
+# Never auto-install missing peers: styled-components declares a react-dom
+# peer that must NOT enter this project (react-dom would drag in a second,
+# mismatched react copy). Unmet peers stay warnings only.
+autoInstallPeers: false
+# styled-components' native entry require('react-native') without declaring
+# it; pinning the peer guarantees a single shared react-native instance.
+packageExtensions:
+  styled-components:
+    peerDependencies:
+      react-native: '*'

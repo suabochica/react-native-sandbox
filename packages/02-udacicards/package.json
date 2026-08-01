@@ -1,0 +1,45 @@
+{
+  "name": "reactnd_slbenitezd_project_udacicards",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "test": "jest"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "moduleNameMapper": {
+      "^@react-native-async-storage/async-storage$": "@react-native-async-storage/async-storage/jest/async-storage-mock.js"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/\\.pnpm/(?!(react-native|@react-native|expo|@expo|react-navigation|@react-navigation|react-redux))",
+      "node_modules/(?!\\.pnpm/)(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@sentry/react-native|native-base|react-native-svg|react-redux)"
+    ]
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@react-navigation/material-top-tabs": "^7.2.13",
+    "@react-navigation/native": "^7.3.13",
+    "@react-navigation/native-stack": "^7.18.5",
+    "expo": "^54.0.0",
+    "expo-constants": "~18.0.13",
+    "expo-notifications": "~0.32.17",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-pager-view": "6.9.1",
+    "react-native-safe-area-context": "~5.6.2",
+    "react-native-screens": "~4.16.0",
+    "react-native-tab-view": "^4.1.2",
+    "react-redux": "^9.3.0",
+    "redux": "^5.0.1",
+    "styled-components": "^6.1.13"
+  },
+  "devDependencies": {
+    "jest": "~29.7.0",
+    "jest-expo": "~54.0.17",
+    "react-test-renderer": "^19.1.0"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "Udacicards",
+    "description": "Mobile flashcards app to study decks of questions.",
+    "slug": "udacicards",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#ffffff",
+    "plugins": [
+      "expo-notifications"
+    ],
+    "ios": {
+      "bundleIdentifier": "org.udacicards.exp"
+    },
+    "android": {
+      "package": "org.udacicards.exp"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+export const ORANGE_WHITE = '#fefee7'
+export const JET_STREAM = '#a4d0c4'
+export const MONTECARLO = '#72c4b9'
+export const MANATEE = '#9a9c9f'
+export const RANGOON_GREEN = '#0f0f0d'
+export const LIMA = '#6bc213'
+export const POMERGRANATE = '#f74D19'
