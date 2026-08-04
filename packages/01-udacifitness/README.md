@@ -18,6 +18,11 @@ A triathlon training log built with React Native and Expo. Record daily run, bik
 
 > ⚠️ **No Vite here, on purpose.** React Native apps are bundled by **Metro**, not Vite (Vite only targets the browser). This project was migrated from Create React Native App (2018) to modern Expo + pnpm; see `AGENTS.md` for the full story.
 
+## 📸 Screenshots
+
+![History](./assets/01-udacifitness-home.webp)
+![Add Entry](./assets/02-udacifitness-add-entry.webp)
+
 ---
 
 ## 📦 Installation
@@ -27,7 +32,7 @@ A triathlon training log built with React Native and Expo. Record daily run, bik
 > ⚠️ This project is **excluded from the monorepo's pnpm workspace** on purpose (see the root `pnpm-workspace.yaml`). It has its own lockfile and `node_modules`; always install and run it from *this* directory, never from the repo root.
 
 ```bash
-cd projects/20-udacifitness
+cd packages/01-udacifitness
 pnpm install
 ```
 
